@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <div class="modal">
+        <span class="modal-text">Bienvenido al incriptador de texto! </span>
+        <img src="assets/img/_89a97e37-82f1-4a7d-be95-6762c05ff35e_upscaled.png" alt="detective.png" id="detective">
+        <div class="modal-percent">0%</div>
+        <button type="button" id="modal-btn" class="btn">Empecemos!</button>
+        <p class="load-text">Cargando...</p>
+    </div>
+
+    <header class="header-layout">
+        <div class="logo">
+            <a href="#"><img src="assets/img/Frame 6.png" alt="logo"></a>
+        </div>
+        <div class="header-title">
+            <h1 id="title">Encriptador de texto</h1>
+        </div>
+        <div class="social-networks">
+            <a href="https://github.com/LuisFernandoMazo/Encryptador" target="_blank">
+                <img class="logo-github" src="assets/img/icons8-github.gif" alt="logo-github">
+            </a>
+            <a href="https://www.linkedin.com/in/luis-fernando-mazo-ca%C3%B1as-9b1392218" target="_blank">
+                <img src="assets/icon/icons8-linkedin.svg" alt="logo-linkend" class="logo-linkend">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-layout">
+            <section class="layout-left">
+                <textarea class="text-input" name="text-input" id="text"
+                    placeholder="Ingrese el texto aqui..."></textarea>
+                <div class="nota">
+                    <img class="icon-alert" src="assets/icon/alert-circle-svgrepo-com.svg" alt="alert-circle">
+                    <p>Solo letras minúsculas y sin acento</p>
+                </div>
+                <div class="btns">
+                    <button class="btn btn-encrypt">ENCRIPTAR</button>
+                    <button class="btn btn-decrypt">DESENCRIPTAR</button>
+                </div>
+            </section>
+            <section class="layout-view">
+                <div class="view-result">
+                    <p class="textResult"></p>
+                    <div>
+                        <button class="copy btn">COPIAR</button>
+                    </div>
+                </div>
+                <div class="content-view">
+                    <img src="assets/img/urban-line-no-data-found-2.png" alt="muñeco con lupa" class="imagen-urban">
+                    <p class="view-paragraph-1">
+                        Ningún mensaje fue encontrado
+                    </p>
+                    <p class="view-paragraph-2">Ingrese el texto que desees encriptar o
+                        desencriptar
+                    </p>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">&copy;<span class="footer-description">Desarrollado por</span> Luis fernando Mazo C
+            <span class="footer-description">para Alura Latam </span>
+        </p>
+    </footer>
+    <div id="popup" class="popup">
+        <span class="popup-content" id="popupContent"></span>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
